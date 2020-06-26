@@ -1,0 +1,11 @@
+version: '3'
+services:
+  userservice:
+    image: 127.0.0.1:5000/userservice
+    hostname: "userservice"
+    networks:
+      - microservicenetwork
+
+networks:
+  microservicenetwork:
+    external: true
